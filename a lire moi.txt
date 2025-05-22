@@ -1,0 +1,15 @@
+lire moi
+
+
+
+les etapes de mon site
+1/il faut que ce dossier a localisé a htdocs ds l'xampp psq j'ai utilisé php
+2/j'ai préfaire que vous ouvrir lui avec google chrome
+3/il faut que commencer avec fichier wlcme.php ,puis tu peut choisi si entré comme user ou comme
+un client 
+4/avec Ton choies tu va noté mon travail
+Merci pour ton attention 
+Etudiants : 
+ARAAR Taouba et
+AID Aya 
+Le group :1
