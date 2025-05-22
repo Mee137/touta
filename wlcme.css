@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'new';
+    src: url(fonts/halfmoon.otf) format(truetype),
+        url(fonts/halfmoon.otf) format(woff),
+        url(fonts/halfmoon.otf) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mee';
+    src: url(fonts/Daily\ Moody.otf) format(truetype),
+    url(fonts/desktop.ini) format(woff),
+    url(fonts/desktop.ini) format(woff2);
+font-display: swap;
+font-weight: 400;
+font-style: normal;
+}
+
+body,
+html {
+    background: pink;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    /* Enable flexbox for centering */
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    margin: 0;
+}
+
+.headers {
+    color: aliceblue;
+    font-family: 'new';
+
+}
+
+.headers:hover {
+    color: rgb(228, 11, 73);
+    font-size: 40px;
+    transition: 0.7s ease;
+
+}
+
+
+.btn {
+    background-color: white;
+    color: rgb(255, 0, 128);
+    border-radius: 15px;
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    width: 200px;
+    padding: 10px;
+    margin-left: 120px;
+    height: 100%;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    text-decoration: none;
+    border: 2px solid #d48eab;
+    z-index: 1;
+    transition: .5s;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: rgb(255, 0, 128);
+    z-index: -1;
+    transition: .5s;
+}
+
+.btn:hover::before {
+    color: rgb(255, 0, 128);
+    width: 100%;
+    transition: .5s;
+}
+
+.btn:hover {
+    color: whitesmoke;
+    transition: .5s;
+}

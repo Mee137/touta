@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'here';
+    src: url(fonts/Barbie\ Signature.otf) format(truetype),
+        url(fonts//Barbie\ Signature.otf) format(woff),
+        url(fonts/Barbie\ Signature.otf) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mee';
+    src: url(fonts/Daily\ Moody.otf) format(truetype),
+    url(fonts/desktop.ini) format(woff),
+    url(fonts/desktop.ini) format(woff2);
+font-display: swap;
+font-weight: 400;
+font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background: url(images/download.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.wrapper {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(99, 46, 137, 0.471);
+    backdrop-filter: blur(5px);
+    width: 450px;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px;
+}
+
+h1 {
+    font-family: 'here';
+    text-align: center;
+    font-size: 36px;
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.inputs input {
+    font-size: 16px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputs input::placeholder {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.inputs i {
+    position: absolute;
+    right: 40px;
+    top: 35%;
+    font-size: 20px;
+}
+
+.forget_remember {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14.5px;
+    margin: -1px 0 15px;
+}
+
+.forget_remember label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.forget_remember a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10 #000;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.register {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.register a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.register p a:hover {
+    text-decoration: underline;
+    color: black;
+}

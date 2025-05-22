@@ -1,0 +1,289 @@
+@font-face {
+    font-family: 'try';
+    src: url(fonts/SCRIPTBL.TTF) format(truetype),
+        url(fonts/SCRIPTBL.TTF) format(woff),
+        url(fonts/SCRIPTBL.TTF) format(woff2);
+}
+
+@font-face {
+    font-family: 'new';
+    src: url(fonts/Barbie\ Signature.otf) format(truetype),
+        url(fonts//Barbie\ Signature.otf) format(woff),
+        url(fonts/Barbie\ Signature.otf) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mee';
+    src: url(fonts/Daily\ Moody.otf) format(truetype),
+        url(fonts/desktop.ini) format(woff),
+        url(fonts/desktop.ini) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.head {
+    justify-content: space-between;
+    display: flex;
+    margin: 10px 10px;
+    align-items: center;
+    height: 5.5vh;
+
+}
+
+.logo {
+    margin-right: 35px;
+    font-family: 'new', Times, serif;
+    color: #e83b8e;
+}
+
+.links a {
+    margin: 0 22px 0 0;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-family: 'try', Times, serif;
+    color: rgb(51, 12, 77);
+    font-weight: 600;
+}
+
+.links a:nth-child(1) {
+    color: rgb(242, 57, 168);
+}
+
+.links a:nth-child(4) ,.links a:nth-child(5) {
+    color: rgb(253, 243, 243);
+    padding: 6px;
+}
+.links a:hover {
+    color: rgb(242, 57, 168);
+    text-decoration: underline;
+    transition: .2s;
+}
+
+.btn {
+    background-color: #e83b8e;
+    color: rgb(253, 243, 243);
+    font-family: 'try', Times, serif;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .5s;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+}
+
+.btn:hover {
+    color: #e83b8e;
+    transition: .5s;
+
+}
+
+.btn:hover::before {
+    color: rgb(253, 243, 243);
+    width: 100%;
+    transition: .5s;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn::before {
+    background-color: rgb(253, 243, 243);
+    transition: .5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.title {
+    padding: 120px;
+    margin: 0;
+    font-size: 2em;
+    background: url(images/Bakery\ Promotion.jpg) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    justify-content: center;
+    background-position: center;
+    height: 45vh;
+}
+
+.title h1 {
+    color: rgb(207, 122, 122);
+    text-align: center;
+    align-items: center;
+    font-family: "new";
+}
+
+.featur {
+    padding: .1px;
+    background-color: rgb(236, 168, 204);
+
+}
+
+.featur h2 {
+    font-family: 'new', Times, serif;
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 2em;
+}
+
+.featur h2:hover {
+    color: #e83b8e;
+    font-size: 2.5em;
+    transition: .5s;
+}
+
+.cakes::-webkit-scrollbar {
+    display: none;
+}
+
+.cakes:hover {
+    cursor: pointer;
+}
+
+.gallery-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -20px;
+}
+
+.scroll-btn {
+    background-color: rgba(232, 139, 213, 0.7);
+    border: none;
+    color: white;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 10;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    background-color: #e83b8e;
+    transform: scale(1.15);
+}
+
+.cakes {
+    margin: 15px;
+    display: flex;
+    gap: 15px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    padding: 30px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.cakes::-webkit-scrollbar {
+    display: none;
+}
+
+.cake {
+    flex: 0 0 auto;
+    position: relative;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(138, 9, 9, 0.618);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cake:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 20px rgba(198, 20, 180, 0.386);
+    z-index: 0;
+    background-color: #fff0f5;
+    color: #e83b8e;
+}
+
+.cake:hover img {
+    filter: brightness(1.06);
+}
+
+.cake img {
+    width: 220px;
+    height: 118px;
+    border-radius: 20px 20px 0 0;
+    display: block;
+    transition: all 0.3s ease;
+    object-fit: cover;
+}
+
+.cakep {
+    border-radius: 0 0 20px 20px;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'try', Times, serif;
+    background-color: aliceblue;
+    width: 220px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+footer {
+    background-color: #5d3a5b;
+    color: white;
+    padding: 2rem;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    font-family: 'new';
+    color: #f8e1d4;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.footer-section p {
+    font-family:'Times New Roman', Times, serif;
+    margin-bottom: 0.5rem;
+}
+
+
+.copyright {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}

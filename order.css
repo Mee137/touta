@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'here';
+    src: url(fonts/Barbie\ Signature.otf) format(truetype),
+        url(fonts//Barbie\ Signature.otf) format(woff),
+        url(fonts/Barbie\ Signature.otf) format(woff2);
+    font-display: swap;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mee';
+    src: url(fonts/Daily\ Moody.otf) format(truetype),
+    url(fonts/desktop.ini) format(woff),
+    url(fonts/desktop.ini) format(woff2);
+font-display: swap;
+font-weight: 400;
+font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    background: url(images/download.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    align-items: center;
+}
+
+.wrapper {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(99, 46, 137, 0.471);
+    backdrop-filter: blur(5px);
+    width: 450px;
+    align-items: center;
+    color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 30px 40px;
+}
+
+h1 {
+    font-family: 'here';
+    text-align: center;
+    font-size: 36px;
+}
+
+.inputs {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+}
+
+.from_group {
+    font-size: 16px;
+    border-radius: 40px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    width: 100%;
+    height: 55px;
+    padding: 20px 45px 20px 20px;
+}
+
+.inputs input::placeholder {
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+.inputs i {
+    position: absolute;
+    right: 40px;
+    top: 35%;
+    font-size: 20px;
+}
+
+.forget_remember {
+    display: flex;
+    justify-content: space-around;
+    font-size: 14.5px;
+    margin: -1px 0 15px;
+}
+
+.input{
+    text-align: center;
+    align-items: center;
+    color: #af0e8c;
+    margin-right: 3px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.forget_remember a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    background-color: #e83b8e;
+    color: rgb(253, 243, 243);
+    font-family: 'try', Times, serif;
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: .5s;
+    z-index: 1;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+    display: inline-flex;
+}
+
+.btn:hover {
+    color: #e83b8e;
+    transition: .5s;
+
+}
+
+.btn:hover::before {
+    color: rgb(253, 243, 243);
+    width: 100%;
+    transition: .5s;
+    border-radius: 5px;
+    border: none;
+}
+
+.btn::before {
+    background-color: rgb(253, 243, 243);
+    transition: .5s;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    z-index: -1;
+}
